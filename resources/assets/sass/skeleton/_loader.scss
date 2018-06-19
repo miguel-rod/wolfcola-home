@@ -1,0 +1,15 @@
+// 1. core config and core config overrides
+@import "config";
+
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+
+// 2. import theme dependencies
+@import "../../../node_modules/normalize-scss/sass/normalize/import-now";
+
+@import "themes/wolf-cola-theme/vars";
+
+@import "themes/wolf-cola-theme/grid";
+@import "themes/wolf-cola-theme/include";
+// 6. import extras to be used in skeleton.scss
+// @import "my/extra/_component.scss";
