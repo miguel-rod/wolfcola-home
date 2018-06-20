@@ -1456,7 +1456,8 @@ img.scale-with-grid {
 }
 
 .profiles {
-  background: plum;
+  border-top: 10px solid white;
+  padding-top: 5vh;
   height: 50vh;
   position: relative;
 }
@@ -1464,14 +1465,28 @@ img.scale-with-grid {
 .profiles__card {
   height: 20vh;
   border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.profiles__card--odd {
-  background: red;
+.profiles__card i {
+  color: white;
 }
 
-.profiles__card--even {
-  background: green;
+.profiles__card .photo {
+  height: 60%;
+}
+
+.profiles__card .photo img {
+  height: 100%;
+  border-radius: 50%;
 }
 
 .profiles__card--empty {

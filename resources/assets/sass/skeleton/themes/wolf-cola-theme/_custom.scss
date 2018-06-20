@@ -115,7 +115,9 @@
 }
 
 .profiles{
-  background: plum;
+  //background: plum;
+  border-top: 10px solid white;
+  padding-top: 5vh;
   height: 50vh;
   position: relative;
   
@@ -123,11 +125,26 @@
 
     height: 20vh;
     border:1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i{
+      color: white;
+    }
+
+    .photo{
+      height: 60%;
+      img{
+        height: 100%;
+      border-radius: 50%;
+      }
+    }
     &--odd{
-      background: red;
+      //background: red;
     }
     &--even{
-      background: green;
+      //background: green;
     }
     &--empty{
       background: yellow;

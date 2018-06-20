@@ -58,17 +58,38 @@
           <div class="row">
             <div class="four columns">
               <div class="profiles__card profiles__card--odd">
-                dennis
+                <div class="photo">
+                  <img src="{{ asset('images/Dennis-BW.jpg') }}" alt="dennis">
+                </div>
+                <p>
+                  Dennis
+                  <br>
+                  <i>CEO</i>
+                </p>
               </div>
             </div>
             <div class="four columns">
               <div class="profiles__card profiles__card--even">
-                mack
+              <div class="photo">
+                  <img src="{{ asset('images/mac.jpg') }}" alt="dennis">
+                </div>
+                <p>
+                  Mac
+                  <br>
+                  <i>Security</i>
+                </p>
               </div>
             </div>
             <div class="four columns">
               <div class="profiles__card profiles__card--odd">
-                charley
+              <div class="photo">
+                  <img src="{{ asset('images/Charlie.jpg') }}" alt="dennis">
+                </div>
+                <p>
+                 Charlie
+                  <br>
+                  <i>Janitor</i>
+                </p>
               </div>
             </div>
           </div>
@@ -80,7 +101,14 @@
             </div>
             <div class="four columns">
               <div class="profiles__card profiles__card--odd">
-                frank
+              <div class="photo">
+                  <img src="{{ asset('images/frank.jpg') }}" alt="dennis">
+                </div>
+                <p>
+                  Frank
+                  <br>
+                  <i>Owner</i>
+                </p>
               </div>
             </div>
             <div class="four columns">
@@ -93,7 +121,7 @@
       </section>
 
       <section class="social-media">
-        
+
       </section>
 
     </body>
