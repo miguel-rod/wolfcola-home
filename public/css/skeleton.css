@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Monoton);@import url(https://fonts.googleapis.com/css?family=Gugi);/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+@import url(https://fonts.googleapis.com/css?family=Roboto:900);/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 
 /* Document
        ========================================================================== */
@@ -898,13 +898,13 @@ html {
 
 body {
   background: #1d1d25;
-  font-family: "Gugi", cursive;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.6;
-  color: #7dcf91;
+  color: rgba(255, 255, 0, 0.87);
   margin: 0 auto;
 }
 
@@ -918,7 +918,7 @@ h4,
 h5,
 h6 {
   color: #1d1d25;
-  font-family: "Monoton", cursive;
+  font-family: "Georgia", "Times New Roman", serif;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -1320,6 +1320,14 @@ img.scale-with-grid {
           transform: translateY(-1rem);
 }
 
+.u-top-border {
+  border-top: 10px solid white;
+}
+
+.u-bottom-border {
+  border-bottom: 10px solid white;
+}
+
 .navbar {
   height: 10vh;
   position: relative;
@@ -1357,7 +1365,6 @@ img.scale-with-grid {
   border: 1px solid white;
   border-top: none;
   border-bottom: none;
-  color: white;
   float: left;
   width: 20%;
 }
@@ -1369,8 +1376,8 @@ img.scale-with-grid {
 }
 
 .header {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url(/images/sunny-main.jpg?cb65e59bd9ba49f58b5b04d2ccd66881);
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(/images/sunny-main.jpg?cb65e59bd9ba49f58b5b04d2ccd66881);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url(/images/sunny-main.jpg?c48649fe0934c344dc4c3d450fbacb87);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(/images/sunny-main.jpg?c48649fe0934c344dc4c3d450fbacb87);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -1379,8 +1386,7 @@ img.scale-with-grid {
 }
 
 .header__text {
-  font-size: 5vh;
-  color: white;
+  font-size: 5rem;
 }
 
 .header__text--main {
@@ -1394,8 +1400,8 @@ img.scale-with-grid {
   text-transform: lowercase;
   font-style: italic;
   position: absolute;
-  -webkit-transform: translate(20vw, 80vh);
-          transform: translate(20vw, 80vh);
+  -webkit-transform: translate(20vw, 70vh);
+          transform: translate(20vw, 70vh);
 }
 
 .mission {
@@ -1413,10 +1419,6 @@ img.scale-with-grid {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.mission__statement {
-  color: white;
 }
 
 .mission__pictures {
@@ -1456,15 +1458,22 @@ img.scale-with-grid {
 }
 
 .profiles {
-  border-top: 10px solid white;
   padding-top: 5vh;
   height: 50vh;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .profiles__card {
   height: 20vh;
-  border: 1px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1477,7 +1486,9 @@ img.scale-with-grid {
 }
 
 .profiles__card i {
+  font-size: 1rem;
   color: white;
+  text-align: right;
 }
 
 .profiles__card .photo {
@@ -1489,7 +1500,56 @@ img.scale-with-grid {
   border-radius: 50%;
 }
 
-.profiles__card--empty {
-  background: yellow;
+.quote {
+  height: 20vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quote__text {
+  border: 1px solid white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.quote__text--sub {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.merch {
+  height: 50vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.merch__img {
+  height: 45vh;
+  background-image: url(/images/merch.jpg?6d409c5df1b2b521ab27f2a8ebcc691c);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.products__card {
+  height: 80%;
+  width: 80%;
 }
 

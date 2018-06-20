@@ -1,39 +1,32 @@
 .navbar {
-  
   height: 10vh;
-  position: relative;
-  //padding: 1%;
- 
+  position: relative; //padding: 1%;
   >div {
     //position: absolute;
     height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
-  } 
+  }
   &__logo {
-    
     float: left;
     position: relative;
     width: 20%;
     margin-right: 5%;
-    &--pic{
+    &--pic {
       position: absolute;
-      top: -9.3vh; 
+      top: -9.3vh;
       left: 5vw;
       height: 20vh;
       z-index: 99999;
     }
-
   }
   &__products {
     border: 1px solid white;
     border-top: none;
-    border-bottom: none;
-    color:white;
+    border-bottom: none; //color:white;
     float: left;
     width: 20%;
-    
   }
   &__social-media {
     background: red;
@@ -42,112 +35,141 @@
   }
 }
 
-.header{
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(0,0,0, 0),
-    rgba(0,0,0, 0.8)),
-    url(../../../../img/sunny-main.jpg);
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    height: 100vh;
+.header {
+  background-image: linear-gradient( to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../../../../img/sunny-main.jpg);
+  background-size: cover;
+  background-position: top;
   position: relative;
-  &__banner{
-
-  }
-  &__text{
-    font-size: 5vh;
-    color: white;
-    &--main{ 
+  height: 100vh;
+  position: relative;
+  &__banner {}
+  &__text {
+    font-size: relative(50px); //color: white;
+    &--main {
       text-transform: uppercase;
       position: absolute;
-      transform: translate(10vw,60vh);
-
+      transform: translate(10vw, 60vh);
     }
-    &--sub{
+    &--sub {
       text-transform: lowercase;
       font-style: italic;
       position: absolute;
-      transform: translate(20vw,80vh);
+      transform: translate(20vw, 70vh);
     }
   }
 }
 
-.mission{
+.mission {
   height: 50vh;
-  .container{
+  .container {
     height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
-  &__statement{
-    color:white;
-
+  &__statement {
+    //color:white;
   }
-  &__pictures{
+  &__pictures {
     position: relative;
-    &--back,&--front{
+    &--back,
+    &--front {
       border: 1px solid white;
       height: 200px;
       position: absolute;
     }
-
-    &--back{
-      &:hover{
+    &--back {
+      &:hover {
         z-index: 999;
         transform: translateY(-50%) scale(1.1);
         box-shadow: -8px -8px 20px 0px #94946d;
       }
       transform: translateY(-50%);
     }
-    &--front{
-      &:hover{
+    &--front {
+      &:hover {
         box-shadow: -8px -8px 20px 0px #94946d;
         transform: translateX(25%) scale(1.1);
       }
       transform: translateX(25%);
-      
     }
   }
 }
 
-.profiles{
+.profiles {
   //background: plum;
-  border-top: 10px solid white;
   padding-top: 5vh;
   height: 50vh;
   position: relative;
-  
-  &__card{
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__card {
     height: 20vh;
-    border:1px solid;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    i{
+    i {
+      font-size: relative(10px);
       color: white;
+      text-align: right;
     }
-
-    .photo{
+    .photo {
       height: 60%;
-      img{
+      img {
         height: 100%;
-      border-radius: 50%;
+        border-radius: 50%;
       }
     }
-    &--odd{
+    &--odd {
       //background: red;
     }
-    &--even{
+    &--even {
       //background: green;
     }
-    &--empty{
-      background: yellow;
+    &--empty {
+      //background: yellow;
     }
+  }
+}
+
+.quote {
+  height: 20vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__text {
+    border: 1px solid white;
+    text-align: center;
+    font-size: relative(30px);
+    &--sub {
+      color: white;
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+}
+
+.merch {
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__img {
+
+    height: 45vh;
+    background-image: url(../../../../img/merch.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+
+.products{
+  &__card{
+    height: 80%;
+    width: 80%;
   }
 }

@@ -30,11 +30,10 @@ $base-width: if($is-fluid, 100%, ($base-col-width + $base-gutter-width) * $base-
 
 $font-size: 16px;  // default font size. Change here will adjust sizes across the board.
 $font-weight: 400; // sets the font weight
-$font-family-title: 'Monoton', cursive;
-$font-family: 'Gugi', cursive;
-$font-color: $secondary-color;  // default font color
+$font-family: 'Roboto', sans-serif;
+$font-color:rgba(255, 255, 0, 0.87);  // default font color
 
-$heading-family: $font-family-title; // default heading (h1-h6) font
+
 $heading-color: $primary-color; // default heading (h1-h6) color
 $heading-weight: 300; // sets the weight of the heading text
 

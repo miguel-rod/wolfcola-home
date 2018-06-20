@@ -22,10 +22,30 @@
           </div>
         </div>
       </section>
+      <section class="quote u-top-border">
+        <div class="quote__text">
+          <div class="quote__text--main">
+            The only cola for true refreshment. <br> Splash into the beast.
+          </div>
+          <div class="quote__text--sub">
+            The official drink of Ass Kickers United.
+          </div>
+        </div>
+      </section>
+
+       <section class="merch u-top-border">
+        <div class="container">
+          <div class="merch__img">
+            <span class="merch__text">
+
+            </span>
+          </div>
+        </div>
+      </section>
 
       <!-- <header class="navbar">
         <div class="navbar__logo">
-          <img class="navbar__logo--pic" src="{{ asset('images/wolfcolalogo.png') }}" alt="">
+          <img class="navbar__logo- -pic" src="{{ asset('images/wolfcolalogo.png') }}" alt="">
         </div>
         <div class="navbar__products">
           products
@@ -34,7 +54,7 @@
           social-media
         </div>
       </header> -->
-      <section class="mission">
+      <section class="mission u-top-border">
         <div class="container">
           <div class="row">
             <div class="seven columns mission__statement">
@@ -46,25 +66,25 @@
             <div class="five columns mission__pictures">
                 <img class="mission__pictures--back" src="{{ asset('images/stpic1.jpg') }}" alt="pic 1">
                 <img class="mission__pictures--front" src="{{ asset('images/stpic2.jpg') }}" alt="pic 2">
-             
             </div>
           </div>
-
         </div>
       </section>
 
-      <section class="profiles">
+      <section class="profiles u-top-border u-bottom-border">
         <div class="container">
           <div class="row">
             <div class="four columns">
               <div class="profiles__card profiles__card--odd">
                 <div class="photo">
-                  <img src="{{ asset('images/Dennis-BW.jpg') }}" alt="dennis">
+                  <a href="/">
+                    <img src="{{ asset('images/Dennis-BW.jpg') }}" alt="dennis">
+                  </a>
                 </div>
                 <p>
                   Dennis
                   <br>
-                  <i>CEO</i>
+                  <i>Executive VP of <br> World Distribution</i>
                 </p>
               </div>
             </div>
@@ -96,7 +116,7 @@
           <div class="row">
             <div class="four columns">
               <div class="profiles__card profiles__card--empty">
-                empty
+                
               </div>
             </div>
             <div class="four columns">
@@ -107,13 +127,36 @@
                 <p>
                   Frank
                   <br>
-                  <i>Owner</i>
+                  <i>President</i>
                 </p>
               </div>
             </div>
             <div class="four columns">
               <div class="profiles__card profiles__card--empty">
-                empty
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <div class="row">
+            <div class="four columns">
+              <div class="products__card">
+                 kitten mittons
+              </div>
+             
+            </div>
+            <div class="four columns">
+            <div class="products__card">
+                 fight milk
+              </div>
+            </div>
+            <div class="four columns">
+              <div class="products__card">
+              other
               </div>
             </div>
           </div>
