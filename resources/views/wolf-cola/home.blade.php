@@ -77,7 +77,7 @@
             <div class="four columns">
               <div class="profiles__card profiles__card--odd">
                 <div class="photo">
-                  <a href="/">
+                  <a href="https://www.reddit.com/r/The_Dennis/">
                     <img src="{{ asset('images/Dennis-BW.jpg') }}" alt="dennis">
                   </a>
                 </div>
